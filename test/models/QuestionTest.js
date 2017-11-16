@@ -18,7 +18,7 @@ function getTableInfo(tableName){
 async function resetDB(){
   return new Promise(async function(resolve){
     await db.run(`DROP TABLE IF EXISTS questions`, function(){
-      resolve("Question Table Dropped.")
+      resolve("dropped the questions table")      
     })
   })
 }; 
