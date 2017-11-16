@@ -10,7 +10,7 @@ class Question{
   questions (id INTEGER PRIMARY KEY)'
     db.run(sql, function(){
       resolve('quesitons table created')
-    })      
+    })
     })
   }
 }
