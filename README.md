@@ -15,7 +15,7 @@ In `models/Question.js` there is an empty class. The goal is to build a `static`
 
 ## Walkthrough Instructions
 
-** These instructions are progressive and if you follow them you will solve the lab. Only the final code block is the solution, all other code blocks are building up to it.**
+**These instructions are progressive and if you follow them you will solve the lab. Only the final code block is the solution, all other code blocks are building up to it.**
 
 To pass this lab, let's first stub out a `static` function in the `Question` class in `models/Question.js`
 
