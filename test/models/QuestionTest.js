@@ -16,9 +16,10 @@ function getTableInfo(tableName){
 };
 
 async function resetDB(){
-  return new Promise(function(resolve){
-    db.run(`DROP TABLE IF EXISTS questions`)
-    resolve("questions table dropped.")
+  return new Promise(async function(resolve){
+    await db.run(`DROP TABLE IF EXISTS questions`, function(){
+      resolve("Question Table Dropped.")
+    })
   })
 }; 
 
@@ -26,10 +27,10 @@ describe('Question', () => {
   describe('as a class', () => {
     describe('.CreateTable()', () => {
       beforeEach(async function() {
-        await resetDB();
+        await resetDB()
       })
       afterEach(async function() {
-        await resetDB();
+        await resetDB()
       })      
 
       it('exists', async () => {
